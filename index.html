@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة مهامي اليومية</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="Bootstrab/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        /* الخلفية المقسومة قطريًا */
+        .diagonal-bg {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(
+                135deg,
+                #4fd1c5 0%,
+                #4fd1c5 50%,
+                #f8f9fa 50%,
+                #f8f9fa 100%
+            );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 50px 60px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .content-box h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: #0d6efd;
+            margin-bottom: 40px;
+        }
+
+        .btn-custom {
+            width: 200px;
+            padding: 12px;
+            font-size: 1.1rem;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="diagonal-bg">
+    
+    <div class="content-box">
+<div class="news-ticker">
+    <div class="ticker-content">
+        اهلا بك عزيزنا المستخدم، تهدف منصة إدارة مهامي لإدارة مهامك اليومية
+        وحماية وخصوصية تامة لبياناتك الشخصية —
+         قم بـ <a href="Pages/Auth/CreateAcount.Html">إنشاء حسابك</a> المجاني وتمتع بخدمة ممتازة
+    </div>
+</div>
+        <h1> منصةإدارة مهامي اليومية </h1>
+
+        <div class="d-flex justify-content-center flex-wrap">
+            <a href="Pages/Auth/Login/Page/Login.Html" class="btn btn-primary btn-custom">
+                تسجيل الدخول
+            </a>
+           
+        </div>
+    </div>
+</div>
+
+<script src="Bootstrab/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

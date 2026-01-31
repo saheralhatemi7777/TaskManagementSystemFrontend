@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة المهام المكتملة</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../../Bootstrab/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            padding: 20px;
+            background-color: #f4f6f9;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>قائمة المهام المكتمله</h2>
+
+<!-- فلترة وبحث -->
+    <div class="card mb-3">
+        <div class="card-body">
+            <div class="row g-2 align-items-end">
+
+                <div class="col-md-3">
+                    <label class="form-label">البحث حسب</label>
+                    <select id="searchType" class="form-select">
+                        <option value="title">عنوان المهمه</option>
+                        <option value="CreateAt">تاريخ الاضافة</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">قيمة البحث</label>
+                    <input
+                        type="text"
+                        id="searchValue"
+                        class="form-control"
+                        placeholder="اكتب للبحث..."
+                    >
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>عنوان المهمة</th>
+                <th>الملاحظات</th>
+                <th>الحالة</th>
+                <th>تاريخ الإضافة</th>
+                <th>تاريخ التعديل</th>
+                <th>عمليات</th>
+            </tr>
+        </thead>
+        <tbody id="taskTableBody">
+            <!-- البيانات ستظهر هنا -->
+            
+        </tbody>
+    </table>
+
+<script src="../js/GetTaskCompletd.js"></script>
+<script src="../../Auth/Login/Js/Auth.js"></script>
+<script>
+    checkAccess("../../../Wirning/Error.html");
+</script>
+</body>
+</html>

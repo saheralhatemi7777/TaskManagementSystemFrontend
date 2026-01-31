@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../../../Bootstrab/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #4fd1c5, #0d6efd);
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 18px;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-card h2 {
+            font-weight: 800;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+
+        .login-card p {
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+        .form-label {
+            text-align: right;
+            width: 100%;
+        }
+
+        .form-control {
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .btn-login {
+            border-radius: 12px;
+            padding: 12px;
+            font-size: 1.1rem;
+        }
+
+        .forgot-password {
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-card text-center">
+    <h2>تسجيل الدخول</h2>
+    <p>أدخل بياناتك للوصول إلى نظام إدارة مهامي</p>
+
+    <form id="loginForm">
+        <div class="mb-3 text-start">
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" id="Email" class="form-control" placeholder="example@email.com" required>
+        </div>
+
+        <div class="mb-3 text-start">
+            <label class="form-label">كلمة المرور</label>
+            <input type="password" id="Password" class="form-control" placeholder="********" required>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <a href="../../SettingAccount/Pages/ChingPassword.html" class="forgot-password text-primary">نسيت كلمة المرور؟</a>
+        </div>
+
+        <button type="submit" id="login" class="btn btn-primary w-100 btn-login">
+            دخول
+        </button>
+    </form>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="Bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Login Script -->
+<script src="../Js/Auth.js"></script>
+
+</body>
+</html>
