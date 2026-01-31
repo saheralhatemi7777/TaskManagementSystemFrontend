@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# SASS / CSS map files (يمكنك تعديل حسب حاجتك)
+*.css.map
